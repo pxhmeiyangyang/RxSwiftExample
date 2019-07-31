@@ -17,6 +17,11 @@
 		F1588D5C22F1430E00DC01AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1588D5A22F1430E00DC01AF /* LaunchScreen.storyboard */; };
 		F1588D6722F1430E00DC01AF /* RxSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D6622F1430E00DC01AF /* RxSwiftExampleTests.swift */; };
 		F1588D7222F1430E00DC01AF /* RxSwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D7122F1430E00DC01AF /* RxSwiftExampleUITests.swift */; };
+		F1588D8222F1461400DC01AF /* MVVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D8122F1461400DC01AF /* MVVMProtocol.swift */; };
+		F1588D8422F1471A00DC01AF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D8322F1471A00DC01AF /* BaseViewController.swift */; };
+		F1588D8622F1476300DC01AF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D8522F1476300DC01AF /* BaseViewModel.swift */; };
+		F1588D8A22F1481200DC01AF /* BaseRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D8922F1481200DC01AF /* BaseRect.swift */; };
+		F1588D8C22F1485200DC01AF /* RSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1588D8B22F1485200DC01AF /* RSLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		F1588D6D22F1430E00DC01AF /* RxSwiftExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1588D7122F1430E00DC01AF /* RxSwiftExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftExampleUITests.swift; sourceTree = "<group>"; };
 		F1588D7322F1430E00DC01AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1588D8122F1461400DC01AF /* MVVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProtocol.swift; sourceTree = "<group>"; };
+		F1588D8322F1471A00DC01AF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F1588D8522F1476300DC01AF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F1588D8922F1481200DC01AF /* BaseRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRect.swift; sourceTree = "<group>"; };
+		F1588D8B22F1485200DC01AF /* RSLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLoginVC.swift; sourceTree = "<group>"; };
 		F2544E026AA1143A20A67049 /* Pods-RxSwiftExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExampleUITests/Pods-RxSwiftExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F328F45DB09F5F19E6F2A64F /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ECAC83CD49EBD69A0A45BB /* Pods_RxSwiftExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +109,6 @@
 				AEF5AD1D28B02A74ACBA256C /* Pods-RxSwiftExampleUITests.debug.xcconfig */,
 				F2544E026AA1143A20A67049 /* Pods-RxSwiftExampleUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +147,8 @@
 		F1588D5022F1430D00DC01AF /* RxSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				F1588D8022F145DE00DC01AF /* ViewControllers */,
+				F1588D7F22F145C000DC01AF /* Support */,
 				F1588D5122F1430D00DC01AF /* AppDelegate.swift */,
 				F1588D5322F1430D00DC01AF /* ViewController.swift */,
 				F1588D5522F1430D00DC01AF /* Main.storyboard */,
@@ -164,6 +175,25 @@
 				F1588D7322F1430E00DC01AF /* Info.plist */,
 			);
 			path = RxSwiftExampleUITests;
+			sourceTree = "<group>";
+		};
+		F1588D7F22F145C000DC01AF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F1588D8122F1461400DC01AF /* MVVMProtocol.swift */,
+				F1588D8322F1471A00DC01AF /* BaseViewController.swift */,
+				F1588D8522F1476300DC01AF /* BaseViewModel.swift */,
+				F1588D8922F1481200DC01AF /* BaseRect.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F1588D8022F145DE00DC01AF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1588D8B22F1485200DC01AF /* RSLoginVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +262,7 @@
 		F1588D4622F1430D00DC01AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RS;
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = pxh;
@@ -405,7 +436,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1588D5422F1430D00DC01AF /* ViewController.swift in Sources */,
+				F1588D8622F1476300DC01AF /* BaseViewModel.swift in Sources */,
+				F1588D8422F1471A00DC01AF /* BaseViewController.swift in Sources */,
+				F1588D8222F1461400DC01AF /* MVVMProtocol.swift in Sources */,
 				F1588D5222F1430D00DC01AF /* AppDelegate.swift in Sources */,
+				F1588D8C22F1485200DC01AF /* RSLoginVC.swift in Sources */,
+				F1588D8A22F1481200DC01AF /* BaseRect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
