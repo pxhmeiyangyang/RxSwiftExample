@@ -1,0 +1,42 @@
+PODS:
+  - HandyJSON (5.0.0)
+  - IQKeyboardManagerSwift (6.4.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - HandyJSON
+  - IQKeyboardManagerSwift
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SnapKit
+  - YYText
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - YYText
+
+SPEC CHECKSUMS:
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: a2c15515cf9bfcc62c623fe281d835fe0b6fa6c2
+
+COCOAPODS: 1.6.1
